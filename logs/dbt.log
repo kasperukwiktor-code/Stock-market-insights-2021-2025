@@ -1,0 +1,48 @@
+[0m22:45:45.179364 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E8715C740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E85662B10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E8726D5B0>]}
+
+
+============================== 22:45:45.182363 | 7caeea04-d2bb-464c-a98c-d0e0102e29d8 ==============================
+[0m22:45:45.182363 [info ] [MainThread]: Running with dbt=1.11.8
+[0m22:45:45.182363 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Wiktor\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt init stock_market', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m22:45:45.189502 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\Wiktor\.dbt
+[0m22:45:45.190502 [debug] [MainThread]: Starter project path: C:\Users\Wiktor\stock-market-project\venv\Lib\site-packages\dbt\include\starter_project
+[0m22:45:45.196698 [info ] [MainThread]: 
+Your new dbt project "stock_market" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m22:45:45.196698 [info ] [MainThread]: Setting up your profile.
+[0m22:46:15.361734 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m22:46:15.361734 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m22:46:15.361734 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m22:50:44.374980 [info ] [MainThread]: Profile stock_market written to C:\Users\Wiktor\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m22:50:44.375981 [debug] [MainThread]: Command `dbt init` succeeded at 22:50:44.375981 after 299.34 seconds
+[0m22:50:44.375981 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E87D7DBE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014EB17A9E80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014EB380A960>]}
+[0m22:50:44.376981 [debug] [MainThread]: Flushing usage events
+[0m22:50:45.047526 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:01:41.524351 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DBD99E3740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DBD9EE3DA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DBDA1EEBA0>]}
+
+
+============================== 20:01:41.540118 | 46b9a894-03a7-4518-8289-48e49eaee633 ==============================
+[0m20:01:41.540118 [info ] [MainThread]: Running with dbt=1.11.8
+[0m20:01:41.541037 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Wiktor\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt deps', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m20:01:41.541037 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\Wiktor\stock-market-project\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m20:01:41.541037 [debug] [MainThread]: Command `dbt deps` failed at 20:01:41.541037 after 0.13 seconds
+[0m20:01:41.541037 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DBDA357920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DBD9E1E930>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DBDB8C8FB0>]}
+[0m20:01:41.541037 [debug] [MainThread]: Flushing usage events
+[0m20:01:42.213652 [debug] [MainThread]: An error was encountered while trying to flush usage events
