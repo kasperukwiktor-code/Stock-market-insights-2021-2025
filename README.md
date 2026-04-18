@@ -44,6 +44,7 @@ stock-market-project/
 - Metrics: avg/min/max close price, avg daily return, total volume, 7-day moving average
 
 ## 📊 Dashboard (Power BI)
+![Dashboard](images/dashboard.png)
 - Monthly closing price trends per ticker
 - Stock popularity ranking by trading volume
 - Risk vs. Reward scatter plot (avg daily return vs. avg price)
