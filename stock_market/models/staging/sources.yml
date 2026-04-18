@@ -6,3 +6,16 @@ sources:
     schema: RAW
     tables:
       - name: stock_prices
+        columns:
+          - name: ticker
+            tests:
+              - not_null
+
+models:  # <--- To musi być w tej samej linii co 'sources:'
+  - name: stg_stock_prices
+    description: "Model stagingowy..."
+    columns:
+      - name: stock_id
+        tests:
+          - unique
+          - not_null

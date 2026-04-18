@@ -1,4 +1,7 @@
-{{ config(materialized='table') }}
+{{ config(
+    materialized='table',
+    schema='mart'
+) }}
 
 with staging as (
     select * from {{ ref('stg_stock_prices') }}
@@ -16,7 +19,7 @@ mart as (
         round(avg(close), 2) as avg_close,
         round(min(close), 2) as min_close,
         round(max(close), 2) as max_close,
-        round(avg(daily_return) * 100, 4) as avg_daily_return_pct,
+        round(avg(daily_return), 6) as avg_daily_return_pct,
         round(avg(moving_avg_7d), 2) as avg_moving_avg_7d,
         sum(volume) as total_volume
     from staging
